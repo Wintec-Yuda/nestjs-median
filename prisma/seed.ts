@@ -28,14 +28,11 @@ async function main() {
       published: true,
     },
   });
-
-  console.log({ post1, post2 });
 }
 
 // execute the main function
 main()
   .catch((e) => {
-    console.error(e);
     process.exit(1);
   })
   .finally(async () => {
